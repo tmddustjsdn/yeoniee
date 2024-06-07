@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>자기소개 페이지</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="image.png" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div id="content1" class="content">
+    <section class="inner main-content">
+      <section class="home">
+          <img class="animate__animated animate__fadeIn" src="name.png" alt="home.img">
+      </section>
+    </section>
+  </div>
+
+  <div id="content2" class="content">
+    <section class="inner sub-content">
+      <section class="about">
+          <div class="about__text eng">
+              <p>Hello! My name is <a href="#me"><span>Seungyeon Yoo</span></a></p>
+              <p>I am <a href="#about__age"><span>23 years old</span></a>.</p>
+              <p>I love <a href="#about__traveling"><span>Watching football</span></a> and going to <a href="#about__concert"><span>concerts</span></a>!</p>
+              <p>My major is <a href="#about__major"><span>Information Convergence DS</span></a>.</p>
+              <p>And now I study... to become a <a href="#about__wecode"><span>developer</span></a>!!</p>
+          </div>
+      </section>
+      <section>
+        <a href="#me"><img src="me.png" alt="me"></a>
+      </section>
+    </section>
+  </div>
+
+  <div id="content3" class="content">
+    <section class="inner like-content">
+      <section class="like">
+        <ul class="like">
+          <li><a href="#bf"><img src="bf.gif" alt="bf"></a></li>
+          <li><a href="#hjhj"><img src="hjhj.gif" alt="hjhj"></a></li>
+          <li><a href="#bell"><img src="bell.gif" alt="bell"></a></li>
+          <li><a href="#sonny"><img src="sonny.gif" alt="sonny"></a></li>
+          <li><a href="#ruppy"><img src="ruppy.gif" alt="ruppy"></a></li>
+        </ul>
+        
+        <div class="about__text eng">
+          <p>My <a href="#bf"><span>BF</span></a>!!</p>
+          <p>MY <a href="#hjhj"><span>IDOL</span></a>❤️</p>
+          <p>I love <a href="#bell"><span>HOT DOG</span></a>🐶</p> 
+          <p>My best player <a href="#sonny"><span>Sonny</span></a>⚽</p>
+          <p>And <a href="#ruppy"><span>🚢</span></a>!!</p>
+      </div>
+      </section>
+    </section>
+  </div>
+
+  <div id="content4" class="content">
+    <section class="inner guestbook-content">
+      <section class="guestbook">
+          <div class="guestbook__text eng">
+              <h2>방명록</h2>
+              <form id="guestbook-form">
+                  <input type="text" id="guest-name" placeholder="Your Name" required>
+                  <textarea id="guest-message" placeholder="Your Message" required></textarea>
+                  <button type="submit">Submit</button>
+              </form>
+              <div id="guestbook-entries"></div>
+          </div>
+      </section>
+    </section>
+  </div>
+
+  <nav class="navbar">
+      <ul class="nav_menu">
+          <li><a href="#content1"><img src="home.png" alt="Home"></a></li>
+          <li><a href="#content2"><img src="about.png" alt="About"></a></li>
+          <li><a href="#content3"><img src="like.png" alt="Like"></a></li>
+          <li><a href="#content4"><img src="guestbook.png" alt="Guestbook"></a></li>
+          <li><a href="https://github.com/tmddustjsdn/yeoniee.git" target="_blank"><img src="github.png" alt="GitHub"></a></li>
+          <li><a href="https://blog.naver.com/intelligentyeonie" target="_blank"><img src="blog.png" alt="Blog"></a></li>
+      </ul>
+  </nav>
+
+  <footer>
+      <ul>
+          <li><p>Copyright ⓒ 2024 All rights reserved by YOENIEE.</p></li>
+          <li>
+              <a href="mailto:zn3400@naver.com" target="_top">
+                  📧 Mail me: zn3400@naver.com
+              </a>
+          </li>
+      </ul>
+  </footer>
+
+  <script src="kkk.js"></script>
+  <script src="guestbook.js"></script> <!-- 방명록 스크립트 추가 -->
+</body>
+</html>

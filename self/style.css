@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+html, body {width: 100%; height: 100%;}
+.content{
+    height: 100vh;
+}
+
+/* 색상 변수 설정 */
+:root {
+    --main-color: #6d4f34;
+    --accent-color: #ffe0a9;
+    --dark-color: #e0c877;
+    --background-color: #f4f4f4;
+    --animate-duration: 9000ms;
+    --animate-delay: 0.9s;
+
+}
+
+
+/* 전체 body 스타일 */
+body {
+
+    font-family: '세방고딕', 'Apple SD Gothic Neo', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    display: center; /* 추가: 사이드바와 콘텐츠를 나란히 배치 */
+}
+
+.inner {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  a {
+    text-decoration: none;
+    color: var(--text-color);}
+
+
+    .name-image {
+        max-width: 300px; /* 이미지 너비 최대값 설정 */
+        max-height: 300px; /* 이미지 높이 최대값 설정 */
+        height: auto;
+        width: auto;
+        text-align: center;
+        padding: 20px 0;
+        position: fixed;
+        left: 50%
+    }
+    
+  
+    .navbar {
+        height: 60px;
+        padding: 1rem; /* 여기서 rem을 사용하려면 값이 있어야 합니다 */
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 100px; /* 왼쪽 가장자리를 화면의 가운데로 이동 */
+        transform: translateX(-50%); /* 가운데 정렬을 위한 이동 */
+    }
+    
+    .nav_menu {
+        display: center;
+        list-style: none;
+        padding-left: 0;
+        margin-top: 600px;
+    }
+    
+    .nav_menu li {
+        padding: 8px 12px;
+        height: 50px;
+        width: auto;
+    }
+    
+    .nav_menu li:hover {
+        color: #ffe4b3;
+        background-color: var(--accent-color);
+        border-radius: 4px;
+    }
+
+    .nav_menu a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .nav_menu a.active {
+        color: rgb(254, 237, 130); /* 강조 색상 */
+        font-weight: bold; /* 강조 효과 */
+    }
+    
+    
+    .nav_menu li a:hover {
+        color: var(--background-color);
+        transform: scale(1.1); /* 호버 시 확대 효과 */
+    }
+    
+    .like {
+        display: flex;
+        justify-content: center; /* 가운데 정렬 */
+        list-style-type: none; /* 불릿 제거 */
+        padding: 0; /* 기본 패딩 제거 */
+        margin: 0; /* 기본 마진 제거 */
+    }
+    
+    .like li {
+        margin: 0 10px; /* 아이템 간격 조정 */
+    }
+    
+    .like img {
+        max-width: 150px; /* 이미지 크기 조정 */
+        height: auto; /* 이미지 비율 유지 */
+    }
+    
+.animate__animated animate__fadeIn {
+    margin-left: 200px;
+    height: auto;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; 
+    margin-left: 500px;
+
+    }
+    
+
+/* 메인 콘텐츠 영역 */
+.inner main-content {
+    margin-left: 200px; /* 사이드바 너비만큼 마진 추가 */
+    padding: 50px;
+    justify-content: center;
+
+}
+
+/* 홈 섹션 이미지 스타일 */
+.home__picture {
+    margin-top: 0;
+    max-width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    left: 50%
+}
+
+
+.inner sub-content {
+    margin-left: 200px; /* 사이드바 너비만큼 마진 추가 */
+    padding: 50px;
+    justify-content: center;
+
+}
+
+section.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* 홈 섹션 텍스트 스타일 */
+.about__text {
+    margin-top: 20px;
+}
+
+.about__text p {
+    margin: 10px;
+}
+
+.about__text a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.about__text a span {
+    border-bottom: 2px solid var(--main-color);
+    transition: border-color 0.3s;
+}
+
+.about__text a:hover span {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+}
+
+
+/* 푸터 스타일 */
+footer {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px; /* 글자 크기 줄이기 */
+    transition: transform 0.3s; /* 애니메이션 효과 추가 */
+    width: 100%;
+}
+
+footer.hidden {
+    transform: translateY(100%); /* 숨기기 위한 변환 */
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 5px 0;
+}
+
+footer a {
+    color: rgb(0, 0, 0);
+    text-decoration:#000
+}
+
+
+  /* 방명록 항목 스타일 */
+.entry {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.entry-date {
+    font-size: 0.8em;
+    color: #777;
+    margin-top: 5px;
+}
+
+.delete-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #e24849;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+}
+
+  
+  .quick-icons li.icon-active::before {
+    background-color: #e24849;
+  }
+
+
